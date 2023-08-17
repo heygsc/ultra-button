@@ -1,24 +1,25 @@
 # ultra-button
 
-## Project setup
-```
-npm install
+## 🎨这个库的名字叫做ultra-button，本意是希望提供一些有意思的按钮样式。
+## 🎨The name of this project is ultra button, and the original intention is to provide some interesting button styles.
+
+## 🛠️ How To Start
+
+### 1. Installation
+
+```shell
+npm i ultra-button
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### 2. Import
 
-### Compiles and minifies for production
-```
-npm run build
-```
+```js
+import { createApp } from 'vue'
+import UltraButton from 'ultra-button'
+import '../node_modules/ultra-button/ultra-button.css'
+import App from './App.vue'
 
-### Lints and fixes files
+const app = createApp(App)
+app.use(UltraButton);
+app.mount('#app')
 ```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
